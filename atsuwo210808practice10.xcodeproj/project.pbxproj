@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		116E3BD4735FB725BA342BC0 /* Pods_atsuwo210808practice10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABA8678BAE3EAE6995E81E7 /* Pods_atsuwo210808practice10.framework */; };
 		C862148426BFE0030021FB1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862148326BFE0030021FB1F /* AppDelegate.swift */; };
 		C862148626BFE0030021FB1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862148526BFE0030021FB1F /* SceneDelegate.swift */; };
 		C862148826BFE0030021FB1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862148726BFE0030021FB1F /* ViewController.swift */; };
 		C862148B26BFE0030021FB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C862148926BFE0030021FB1F /* Main.storyboard */; };
 		C862148D26BFE0040021FB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C862148C26BFE0040021FB1F /* Assets.xcassets */; };
 		C862149026BFE0040021FB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C862148E26BFE0040021FB1F /* LaunchScreen.storyboard */; };
+		C862149926BFE18C0021FB1F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862149726BFE18C0021FB1F /* CustomTableViewCell.swift */; };
+		C862149A26BFE18C0021FB1F /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C862149826BFE18C0021FB1F /* CustomTableViewCell.xib */; };
+		C862149D26BFE2B10021FB1F /* PrefatctureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862149C26BFE2B10021FB1F /* PrefatctureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BAEEB31D20EDD6B608A4B62 /* Pods-atsuwo210808practice10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atsuwo210808practice10.release.xcconfig"; path = "Target Support Files/Pods-atsuwo210808practice10/Pods-atsuwo210808practice10.release.xcconfig"; sourceTree = "<group>"; };
+		9095A80A6C0DF9CBF5E89044 /* Pods-atsuwo210808practice10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atsuwo210808practice10.debug.xcconfig"; path = "Target Support Files/Pods-atsuwo210808practice10/Pods-atsuwo210808practice10.debug.xcconfig"; sourceTree = "<group>"; };
+		BABA8678BAE3EAE6995E81E7 /* Pods_atsuwo210808practice10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atsuwo210808practice10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C862148026BFE0030021FB1F /* atsuwo210808practice10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atsuwo210808practice10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C862148326BFE0030021FB1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C862148526BFE0030021FB1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		C862148C26BFE0040021FB1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C862148F26BFE0040021FB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C862149126BFE0040021FB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C862149726BFE18C0021FB1F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C862149826BFE18C0021FB1F /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		C862149C26BFE2B10021FB1F /* PrefatctureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefatctureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				116E3BD4735FB725BA342BC0 /* Pods_atsuwo210808practice10.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A004C4B7D01BE86B7E935D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BABA8678BAE3EAE6995E81E7 /* Pods_atsuwo210808practice10.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C862147726BFE0030021FB1F = {
 			isa = PBXGroup;
 			children = (
 				C862148226BFE0030021FB1F /* atsuwo210808practice10 */,
 				C862148126BFE0030021FB1F /* Products */,
+				DB1BDA93A0F9956859EA8523 /* Pods */,
+				A004C4B7D01BE86B7E935D45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +84,29 @@
 				C862148C26BFE0040021FB1F /* Assets.xcassets */,
 				C862148E26BFE0040021FB1F /* LaunchScreen.storyboard */,
 				C862149126BFE0040021FB1F /* Info.plist */,
+				C862149B26BFE1990021FB1F /* Cell */,
+				C862149C26BFE2B10021FB1F /* PrefatctureModel.swift */,
 			);
 			path = atsuwo210808practice10;
+			sourceTree = "<group>";
+		};
+		C862149B26BFE1990021FB1F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C862149726BFE18C0021FB1F /* CustomTableViewCell.swift */,
+				C862149826BFE18C0021FB1F /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DB1BDA93A0F9956859EA8523 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9095A80A6C0DF9CBF5E89044 /* Pods-atsuwo210808practice10.debug.xcconfig */,
+				4BAEEB31D20EDD6B608A4B62 /* Pods-atsuwo210808practice10.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C862149426BFE0040021FB1F /* Build configuration list for PBXNativeTarget "atsuwo210808practice10" */;
 			buildPhases = (
+				7F9AF0BBD6492C3D5F49AB98 /* [CP] Check Pods Manifest.lock */,
 				C862147C26BFE0030021FB1F /* Sources */,
 				C862147D26BFE0030021FB1F /* Frameworks */,
 				C862147E26BFE0030021FB1F /* Resources */,
+				EAB2420213F5A19DB6C679A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,19 +170,64 @@
 			files = (
 				C862149026BFE0040021FB1F /* LaunchScreen.storyboard in Resources */,
 				C862148D26BFE0040021FB1F /* Assets.xcassets in Resources */,
+				C862149A26BFE18C0021FB1F /* CustomTableViewCell.xib in Resources */,
 				C862148B26BFE0030021FB1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F9AF0BBD6492C3D5F49AB98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-atsuwo210808practice10-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB2420213F5A19DB6C679A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-atsuwo210808practice10/Pods-atsuwo210808practice10-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-atsuwo210808practice10/Pods-atsuwo210808practice10-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atsuwo210808practice10/Pods-atsuwo210808practice10-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C862147C26BFE0030021FB1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C862149D26BFE2B10021FB1F /* PrefatctureModel.swift in Sources */,
 				C862148826BFE0030021FB1F /* ViewController.swift in Sources */,
 				C862148426BFE0030021FB1F /* AppDelegate.swift in Sources */,
+				C862149926BFE18C0021FB1F /* CustomTableViewCell.swift in Sources */,
 				C862148626BFE0030021FB1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +372,7 @@
 		};
 		C862149526BFE0040021FB1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9095A80A6C0DF9CBF5E89044 /* Pods-atsuwo210808practice10.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +392,7 @@
 		};
 		C862149626BFE0040021FB1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BAEEB31D20EDD6B608A4B62 /* Pods-atsuwo210808practice10.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

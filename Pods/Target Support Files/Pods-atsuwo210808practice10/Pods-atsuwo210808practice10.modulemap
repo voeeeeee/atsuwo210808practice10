@@ -1,0 +1,6 @@
+framework module Pods_atsuwo210808practice10 {
+  umbrella header "Pods-atsuwo210808practice10-umbrella.h"
+
+  export *
+  module * { export * }
+}
