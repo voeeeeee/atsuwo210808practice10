@@ -12,55 +12,55 @@ import RxCocoa
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var disposeBag = DisposeBag()
-    var prefactureDetail = BehaviorRelay<[PrefactureModel]>(value:
-                                                                [PrefactureModel(prefactureName: "北海道"),
-                                                                 PrefactureModel(prefactureName: "青森県"),
-                                                                 PrefactureModel(prefactureName: "岩手県"),
-                                                                 PrefactureModel(prefactureName: "宮城県"),
-                                                                 PrefactureModel(prefactureName: "秋田県"),
-                                                                 PrefactureModel(prefactureName: "山形県"),
-                                                                 PrefactureModel(prefactureName: "福島県"),
-                                                                 PrefactureModel(prefactureName: "茨城県"),
-                                                                 PrefactureModel(prefactureName: "栃木県"),
-                                                                 PrefactureModel(prefactureName: "群馬県"),
-                                                                 PrefactureModel(prefactureName: "埼玉県"),
-                                                                 PrefactureModel(prefactureName: "千葉県"),
-                                                                 PrefactureModel(prefactureName: "東京都"),
-                                                                 PrefactureModel(prefactureName: "神奈川県"),
-                                                                 PrefactureModel(prefactureName: "新潟県"),
-                                                                 PrefactureModel(prefactureName: "富山県"),
-                                                                 PrefactureModel(prefactureName: "石川県"),
-                                                                 PrefactureModel(prefactureName: "福井県"),
-                                                                 PrefactureModel(prefactureName: "山梨県"),
-                                                                 PrefactureModel(prefactureName: "長野県"),
-                                                                 PrefactureModel(prefactureName: "岐阜県"),
-                                                                 PrefactureModel(prefactureName: "静岡県"),
-                                                                 PrefactureModel(prefactureName: "愛知県"),
-                                                                 PrefactureModel(prefactureName: "三重県"),
-                                                                 PrefactureModel(prefactureName: "滋賀県"),
-                                                                 PrefactureModel(prefactureName: "京都府"),
-                                                                 PrefactureModel(prefactureName: "大阪府"),
-                                                                 PrefactureModel(prefactureName: "兵庫県"),
-                                                                 PrefactureModel(prefactureName: "奈良県"),
-                                                                 PrefactureModel(prefactureName: "和歌山県"),
-                                                                 PrefactureModel(prefactureName: "鳥取県"),
-                                                                 PrefactureModel(prefactureName: "島根県"),
-                                                                 PrefactureModel(prefactureName: "岡山県"),
-                                                                 PrefactureModel(prefactureName: "広島県"),
-                                                                 PrefactureModel(prefactureName: "山口県"),
-                                                                 PrefactureModel(prefactureName: "徳島県"),
-                                                                 PrefactureModel(prefactureName: "香川県"),
-                                                                 PrefactureModel(prefactureName: "愛媛県"),
-                                                                 PrefactureModel(prefactureName: "高知県"),
-                                                                 PrefactureModel(prefactureName: "福岡県"),
-                                                                 PrefactureModel(prefactureName: "佐賀県"),
-                                                                 PrefactureModel(prefactureName: "長崎県"),
-                                                                 PrefactureModel(prefactureName: "熊本県"),
-                                                                 PrefactureModel(prefactureName: "大分県"),
-                                                                 PrefactureModel(prefactureName: "宮崎県"),
-                                                                 PrefactureModel(prefactureName: "鹿児島県"),
-                                                                 PrefactureModel(prefactureName: "沖縄県")])
+    private var disposeBag = DisposeBag()
+    private var prefectureDetail = BehaviorRelay<[PrefectureModel]>(value:
+                                                                [PrefectureModel(prefectureName: "北海道"),
+                                                                 PrefectureModel(prefectureName: "青森県"),
+                                                                 PrefectureModel(prefectureName: "岩手県"),
+                                                                 PrefectureModel(prefectureName: "宮城県"),
+                                                                 PrefectureModel(prefectureName: "秋田県"),
+                                                                 PrefectureModel(prefectureName: "山形県"),
+                                                                 PrefectureModel(prefectureName: "福島県"),
+                                                                 PrefectureModel(prefectureName: "茨城県"),
+                                                                 PrefectureModel(prefectureName: "栃木県"),
+                                                                 PrefectureModel(prefectureName: "群馬県"),
+                                                                 PrefectureModel(prefectureName: "埼玉県"),
+                                                                 PrefectureModel(prefectureName: "千葉県"),
+                                                                 PrefectureModel(prefectureName: "東京都"),
+                                                                 PrefectureModel(prefectureName: "神奈川県"),
+                                                                 PrefectureModel(prefectureName: "新潟県"),
+                                                                 PrefectureModel(prefectureName: "富山県"),
+                                                                 PrefectureModel(prefectureName: "石川県"),
+                                                                 PrefectureModel(prefectureName: "福井県"),
+                                                                 PrefectureModel(prefectureName: "山梨県"),
+                                                                 PrefectureModel(prefectureName: "長野県"),
+                                                                 PrefectureModel(prefectureName: "岐阜県"),
+                                                                 PrefectureModel(prefectureName: "静岡県"),
+                                                                 PrefectureModel(prefectureName: "愛知県"),
+                                                                 PrefectureModel(prefectureName: "三重県"),
+                                                                 PrefectureModel(prefectureName: "滋賀県"),
+                                                                 PrefectureModel(prefectureName: "京都府"),
+                                                                 PrefectureModel(prefectureName: "大阪府"),
+                                                                 PrefectureModel(prefectureName: "兵庫県"),
+                                                                 PrefectureModel(prefectureName: "奈良県"),
+                                                                 PrefectureModel(prefectureName: "和歌山県"),
+                                                                 PrefectureModel(prefectureName: "鳥取県"),
+                                                                 PrefectureModel(prefectureName: "島根県"),
+                                                                 PrefectureModel(prefectureName: "岡山県"),
+                                                                 PrefectureModel(prefectureName: "広島県"),
+                                                                 PrefectureModel(prefectureName: "山口県"),
+                                                                 PrefectureModel(prefectureName: "徳島県"),
+                                                                 PrefectureModel(prefectureName: "香川県"),
+                                                                 PrefectureModel(prefectureName: "愛媛県"),
+                                                                 PrefectureModel(prefectureName: "高知県"),
+                                                                 PrefectureModel(prefectureName: "福岡県"),
+                                                                 PrefectureModel(prefectureName: "佐賀県"),
+                                                                 PrefectureModel(prefectureName: "長崎県"),
+                                                                 PrefectureModel(prefectureName: "熊本県"),
+                                                                 PrefectureModel(prefectureName: "大分県"),
+                                                                 PrefectureModel(prefectureName: "宮崎県"),
+                                                                 PrefectureModel(prefectureName: "鹿児島県"),
+                                                                 PrefectureModel(prefectureName: "沖縄県")])
 
 
     override func viewDidLoad() {
@@ -75,10 +75,10 @@ class ViewController: UIViewController {
     }
 
     func setupRx() {
-        prefactureDetail.asObservable()
+        prefectureDetail.asObservable()
             .bind(to: self.tableView.rx.items(cellIdentifier: "CustomTableViewCell", cellType: CustomTableViewCell.self)) { (row, element, cell) in
-                cell.prefactureNumber.text = String(row + 1)
-                cell.configure(prefactureName: element.prefactureName)
+                cell.prefectureNumber.text = String(row + 1)
+                cell.configure(prefactureName: element.prefectureName)
 
                 if row % 3 == 0{
                     cell.backgroundColor = #colorLiteral(red: 1, green: 0.8219535351, blue: 0.8164971471, alpha: 1)

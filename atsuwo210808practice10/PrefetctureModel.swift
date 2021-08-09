@@ -7,10 +7,10 @@
 
 import Foundation
 import UIKit
-class PrefactureModel:NSObject {
-    var prefactureName: String
+class PrefectureModel:NSObject {
+    var prefectureName: String
 
-    init(prefactureName: String) {
-        self.prefactureName = prefactureName
+    init(prefectureName: String) {
+        self.prefectureName = prefectureName
     }
 }

@@ -9,11 +9,11 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var prefactureLabel: UILabel!
-    @IBOutlet weak var prefactureNumber: UILabel!
+    @IBOutlet weak var prefectureLabel: UILabel!
+    @IBOutlet weak var prefectureNumber: UILabel!
 
     func configure(prefactureName: String) {
-        self.prefactureLabel.text = prefactureName
+        self.prefectureLabel.text = prefactureName
     }
     
 }
