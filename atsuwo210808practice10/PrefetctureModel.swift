@@ -7,10 +7,7 @@
 
 import Foundation
 import UIKit
-class PrefectureModel:NSObject {
-    var prefectureName: String
 
-    init(prefectureName: String) {
-        self.prefectureName = prefectureName
-    }
+struct Prefecture {
+    var name: String
 }
